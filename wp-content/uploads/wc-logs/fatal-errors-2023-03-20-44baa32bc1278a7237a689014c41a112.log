@@ -1,0 +1,26 @@
+2023-03-20T10:46:17+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T10:48:26+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T10:50:28+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T11:05:51+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T11:05:53+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T11:06:04+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T11:06:04+00:00 CRITICAL Unclosed '{' on line 23 dans /Applications/MAMP/htdocs/wordpress/wp-content/themes/concept-bois/functions.php à la ligne 141
+
+2023-03-20T20:19:01+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "concept_custom_logo_setup" not found or invalid function name in /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php:308
+Stack trace:
+#0 /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#1 /Applications/MAMP/htdocs/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /Applications/MAMP/htdocs/wordpress/wp-settings.php(595): do_action('after_setup_the...')
+#3 /Applications/MAMP/htdocs/wordpress/wp-config.php(98): require_once('/Applications/M...')
+#4 /Applications/MAMP/htdocs/wordpress/wp-load.php(50): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/wordpress/wp-blog-header.php(13): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/wordpress/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown dans /Applications/MAMP/htdocs/wordpress/wp-includes/class-wp-hook.php à la ligne 308
+

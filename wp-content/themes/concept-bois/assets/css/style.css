@@ -11,21 +11,21 @@ html {
 }
 
 ::-webkit-scrollbar{
-    display: none;
+    display: none
 }
 
 body{
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
 
 #bg-top-bar{
-    background: #80b918 !important;
+    background: #80b918 !important
 }
 
 .info{
-    font-size: small;
+    font-size: small
 }
 
 .nav-link-footer {
@@ -35,9 +35,10 @@ body{
     font-weight: var(--bs-nav-link-font-weight);
     color: #fff;
     text-decoration: none;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-o, border-color 0.15s ease-in-out
   }
     
-.nav-link-footer:hover, .nav-link-footer:focus {
-    color: #80B918;
+.nav-link-footer:hover, 
+.nav-link-footer:focus {
+    color: #80B918
   }

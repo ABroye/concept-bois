@@ -1,0 +1,43 @@
+/* Paramètres généraux des éléments des pages 
+Couleur verte claire
+RGB : 128, 185, 24;
+HEX : #80b918;
+Couleur Dark
+RGB : 50, 50, 50;
+HEX : #323232;
+*/
+html {
+    scrollbar-width: none
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#bg-top-bar{
+    background: #80b918 !important;
+}
+
+.info{
+    font-size: small;
+}
+
+.nav-link-footer {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+    
+.nav-link-footer:hover, .nav-link-footer:focus {
+    color: #80B918;
+  }

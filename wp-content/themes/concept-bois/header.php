@@ -13,7 +13,6 @@
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
     
-    <?php if (is_front_page()) : ?>
         <div id="bg-top-bar" class="nav">
             <div class="container g-0">
                 <ul class="nav justify-content-between">
@@ -60,7 +59,7 @@
                                 ));
                             ?>
                             <div class="text-center">
-                                <a href="mon-compte"><button type="button" class="btn btn-outline-success me-2">Espace client</button></a>
+                                <a href="#"><button type="button" class="btn btn-outline-success me-2">Espace client</button></a>
                                 <a href="#"><button type="button" class="btn btn-outline-success">Créer un compte</button></a>
                             </div>
                         </div>
@@ -68,5 +67,3 @@
                 </div>
             </nav>
         </header>
-
-    <?php endif; ?>

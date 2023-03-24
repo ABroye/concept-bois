@@ -1,20 +1,21 @@
 <?php get_header(); ?>
 
-<h1>PAGE <?php the_title(); ?></h1>
 <main class="container">
-    <section class="home-slider">
-        <?php get_template_part( 'template-parts/sliders/pageSlider' ); ?>
-    </section>
+
     <div class="row my-5">
-        <div class="col-lg-10 col-md-8 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12">
             <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                     <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                        <div class="post-meta">
-                            <span class="post-date"><?php the_date(); ?></span>
-                            <span class="post-author"><?php the_author_posts_link(); ?></span>
+                        <div class="card shadow border-0 h-100">
+                            <div class="card-header bg-dark rounded-0">
+                                <div class="card-title">
+                                    <h1 class="fs-2 pt-1"><?php the_title() ?></h1>
+                                </div>
+                            </div>
+                            <div class="card-body d-flex flex-column">
+                                <?php the_content(); ?>
+                            </div>
                         </div>
-                        <?php the_content(); ?>
                     </article>
                 <?php endwhile;
             else : ?>

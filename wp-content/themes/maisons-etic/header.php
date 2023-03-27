@@ -17,7 +17,7 @@
             <div class="container g-0">
                 <ul class="nav justify-content-between">
                     <li class="nav-item">
-                        <a href="mailto:contact@concept-bois.eu" class="nav-link text-white info"><i class="bi bi-envelope"></i> contact@concept-bois.eu</a>
+                        <a href="mailto:info@maisons-etic.fr" class="nav-link text-white info"><i class="bi bi-envelope"></i> info@maisons-etic.fr</a>
                     </li>
                     <li class="nav-item">
                         <a href="tel:0749839900" class="nav-link text-white info"><i class="bi bi-telephone"></i> + 33 (0)749 83 99 00</a>
@@ -26,24 +26,22 @@
             </div>
         </div>
         <header class="bg-dark shadow-lg sticky-top">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+            <nav id="madeInFrance" class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
                 <div class="container">
                     <?php
                         $custom_logo_id = get_theme_mod( 'custom_logo' );
                         $logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
                         if ( has_custom_logo() ) {
                             echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '">';
-                        } else {
-                            echo '<h1>' . get_bloginfo('name') . '</h1>';
-                        }                    
+                        }      
                     ?>
-                    <a class="navbar-brand d-lg-none" href="<?php echo home_url( '/' ); ?>"><?php bloginfo('name'); ?></a>
+                    <a class="navbar-brand" href="<?php echo home_url( '/' ); ?>"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
                         <div class="offcanvas-header border-bottom">
-                            <h5 class="offcanvas-title" id="offcanvasLabel">Concept Bois</h5>
+                            <h5 class="offcanvas-title" id="offcanvasLabel">Maisons Étic</h5>
                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">

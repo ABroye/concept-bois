@@ -1,6 +1,6 @@
 <?php
 // Inclure les fichiers CSS et JavaScript de Bootstrap
-function concept_bois_enqueue_styles() {
+function maisons_etic_enqueue_styles() {
     // CSS de Bootstrap
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css' );
     // CSS de Bootstrap overide
@@ -10,22 +10,22 @@ function concept_bois_enqueue_styles() {
     // CSS personnalisés
     wp_enqueue_style( 'concept-bois', get_stylesheet_directory_uri() . '/assets/css/style.css' );
 }
-add_action( 'wp_enqueue_scripts', 'concept_bois_enqueue_styles' );
+add_action( 'wp_enqueue_scripts', 'maisons_etic_enqueue_styles' );
 
-function concept_bois_enqueue_scripts() {
+function maisons_etic_enqueue_scripts() {
     // JavaScript de Bootstrap
     wp_enqueue_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js' );
     // JavaScript personnalisé
     wp_enqueue_script( 'scripts', get_template_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), '1.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'concept_bois_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'maisons_etic_enqueue_scripts' );
 
 function raspdev_title_separator() 
 {
     return '|';
 }
 
-function concept_bois_custom_logo_setup() {
+function maisons_etic_custom_logo_setup() {
 	$defaults = array(
 		'height'               => 40,
 		'width'                => 100,
@@ -36,13 +36,13 @@ function concept_bois_custom_logo_setup() {
 	);
 	add_theme_support( 'custom-logo', $defaults );
 }
-add_action( 'after_setup_theme', 'concept_bois_custom_logo_setup' );
+add_action( 'after_setup_theme', 'maisons_etic_custom_logo_setup' );
 
 // Register Navigation Menus
-function concept_bois_navigation_menus()
+function maisons_etic_navigation_menus()
 {
     $locations = array(
-        'main-menu' => __( 'Menu principal', 'concept_bois' ),
+        'main-menu' => __( 'Menu principal', 'maisons_etic' ),
     );
     register_nav_menus($locations);
 }
@@ -125,7 +125,7 @@ class bootstrap_5_wp_nav_menu_walker extends Walker_Nav_menu
     }
 }
 
-add_action( 'init', 'concept_bois_navigation_menus' );
+add_action( 'init', 'maisons_etic_navigation_menus' );
 
 add_theme_support( 'post-thumbnails' );
 add_theme_support( 'title-tag' );

@@ -20,7 +20,7 @@ function maisons_etic_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'maisons_etic_enqueue_scripts' );
 
-function raspdev_title_separator() 
+function maisons_etic_title_separator() 
 {
     return '|';
 }

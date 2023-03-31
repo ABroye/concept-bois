@@ -12,7 +12,7 @@
                                     <h1 class="fs-2 pt-1"><?php the_title() ?></h1>
                                 </div>
                             </div>
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body d-flex flex-column mx-4">
                                 <?php the_content(); ?>
                             </div>
                         </div>

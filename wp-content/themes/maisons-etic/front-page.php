@@ -4,7 +4,7 @@
     <?php get_template_part( 'template-parts/sliders/homeSlider' ); ?>
 </section>
 <main class="container">
-    <div class="row mb-5 my-5">
+    <div class="row mx-3 mb-5 my-5 justify-content-center">
 
         <div class="col-lg-12 col-md-12 col-sm-12">
 

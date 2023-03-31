@@ -7,17 +7,17 @@ RGB : 50, 50, 50;
 HEX : #323232;
 */
 html {
-    scrollbar-width: none
+      scrollbar-width: none
 }
 
 ::-webkit-scrollbar{
-    display: none
+      display: none;
 }
 
 body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column
+      min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 #bg-top-bar{
@@ -48,3 +48,7 @@ body{
 .nav-link-footer:focus {
     color: #80B918
   }
+  
+.text-green {
+    color: #80b918;
+}

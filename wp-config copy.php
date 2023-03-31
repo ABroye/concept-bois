@@ -22,10 +22,10 @@
 
 // ** Réglages MySQL - Votre hébergeur doit vous fournir ces informations. ** //
 /** Nom de la base de données de WordPress. */
-define( 'DB_NAME', 'qtbx0295_cb' );
+define( 'DB_NAME', 'qtbx0295_me' );
 
 /** Utilisateur de la base de données MySQL. */
-define( 'DB_USER', 'qtbx0295_cb' );
+define( 'DB_USER', 'qtbx0295_me' );
 
 /** Mot de passe de la base de données MySQL. */
 define( 'DB_PASSWORD', 'Wi-Fi@04100' );
@@ -86,34 +86,7 @@ $table_prefix = 'wp_';
  *
  * @link https://fr.wordpress.org/support/article/debugging-in-wordpress/
  */
-define( 'DISALLOW_FILE_EDIT', true );
-define( 'WP_POST_REVISIONS', 5 );
-define( 'AUTOSAVE_INTERVAL', 300 );
-// define( 'WP_HOME', 'http://concept-bois.alainbroye.fr' );
-// define( 'WP_SITEURL', 'http://concept-bois.alainbroye.fr' );
-
-// $is_localhost = ($_SERVER['REMOTE_ADDR'] == "127.0.0.1" or $_SERVER['REMOTE_ADDR'] == "::1");
-
-// if ( $is_localhost ):
-//  define('DB_NAME', 'wordpress');
-// 	define('DB_USER', 'root');
-// 	define('DB_PASSWORD', 'root');
-// 	define('DB_HOST', 'localhost');
-
-// 	define('WP_HOME','http://concept-bois.alainbroye.local');
-// 	define('WP_SITEURL','http://concept-bois.alainbroye.local');
-	
-// 	// Activer le debug en local seulement
-// 	define( 'WP_DEBUG', true ); 
-// else:
-// 	define('DB_NAME', 'qtbx0295_cb');
-// 	define('DB_USER', 'qtbx0295_cb');
-// 	define('DB_PASSWORD', 'Wi-Fi@04100');
-// 	define('DB_HOST', 'localhost');
-
-// 	define('WP_HOME','https://concept-bois.alainbroye.fr');
-// 	define('WP_SITEURL','https://concept-bois.alainbroye.fr');
-// endif;
+define( 'DISALLOW_FILE_EDIT', false );
 /* C’est tout, ne touchez pas à ce qui suit ! Bonne publication. */
 
 /** Chemin absolu vers le dossier de WordPress. */
